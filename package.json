@@ -1,0 +1,19 @@
+{
+  "name": "whattweetbot",
+  "private": true,
+  "description": "A CLI to obtain Twitter account credentials for whattweetbot",
+  "main": "src/index.js",
+  "bin": {
+    "whattweetbot": "bin/whattweetbot"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompts": "^2.4.0",
+    "twitter-lite": "^0.14.0"
+  }
+}
