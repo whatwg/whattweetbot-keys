@@ -1,12 +1,16 @@
+#!/usr/bin/env node
 "use strict";
 
 const config = require("../private-config.json");
 const Twitter = require("twitter-lite");
 const prompts = require("prompts");
 
-module.exports.cli = async args => {
-  console.log(args);
+main().catch(e => {
+  console.error(e);
+  process.exit(1);
+});
 
+async function main() {
   const client = new Twitter({ consumer_key: config.key, consumer_secret: config.secret });
 
   const requestToken = await client.getRequestToken("oob");
