@@ -26,6 +26,6 @@ async function main() {
     oauth_token: requestToken.oauth_token
   });
 
-  console.log("Copy and store oauth_token and oauth_token_secret:");
-  console.log(accessToken);
+  console.log("Copy and store these keys:\n");
+  console.log(JSON.stringify({ [accessToken.screen_name]: { key: accessToken.oauth_token, secret: accessToken.oauth_token_secret } }, null, 2));
 }
