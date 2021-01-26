@@ -5,7 +5,7 @@
   "bin": {
     "whattweetbot-keys": "src/cli.js"
   },
-  "license": "ISC",
+  "license": "CC0-1.0",
   "dependencies": {
     "prompts": "^2.4.0",
     "twitter-lite": "^0.14.0"
