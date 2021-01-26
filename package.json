@@ -1,9 +1,9 @@
 {
-  "name": "whattweetbot",
+  "name": "whattweetbot-keys",
   "private": true,
   "description": "A CLI to obtain Twitter account credentials for whattweetbot",
   "bin": {
-    "whattweetbot": "src/cli.js"
+    "whattweetbot-keys": "src/cli.js"
   },
   "license": "ISC",
   "dependencies": {
